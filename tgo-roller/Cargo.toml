@@ -1,0 +1,12 @@
+[package]
+name = "tgo-roller-chatbot"
+version = "0.1.0"
+edition = "2018"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# See https://github.com/robkorn/urbit-chatbot-framework for framework documentation 
+
+[dependencies]
+urbit-chatbot-framework          = {version = "0.1.2", path="../.."}
+json                             = "0.12.4"
+reqwest                          = "0.11.0"
+rand 				             = "0.8.0"

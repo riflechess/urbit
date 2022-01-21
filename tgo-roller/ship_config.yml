@@ -1,0 +1,7 @@
+
+# IP Address of your Urbit ship (default is local)
+ship_ip: "10.0.0.0"
+# Port that the ship is on
+ship_port: "8001"
+# The `+code` of your ship
+ship_code: "zzzzzz-xxxxxx-wwwwww-eeeeee"
