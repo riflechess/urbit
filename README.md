@@ -71,3 +71,5 @@ The relationship between a given star and the planets it is able to spawn is pur
    ./getParent 673540       
    ~sitsev
    ```
+
+`urbit_monitor.sh` Is a simple monitor that will validate your urbit ships/planets are running and text you if they are not.
