@@ -10,6 +10,5 @@ TGO Roller runs as a comet in TGO, and responds to the following commands (rolls
  - `!rollnf` - Serve link to random National Forest
  - `!rollsp` - Serve link to random State Park/monument/recreation/wildlife area
 
-![TGO-Roller Example](https://github.com/riflechess/urbit/tree/main/tgo-roller/img/tgo-roller.png "TGO-ROLLER")
-
-![example image](https://github.com/riflechess/rand-util/blob/master/img/contest.JPG "Connection Test")
+![TGO-Roller Example](https://raw.githubusercontent.com/riflechess/urbit/main/tgo-roller/img/tgo-roller.png)
+                      
