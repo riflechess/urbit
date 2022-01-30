@@ -19,7 +19,7 @@ The relationship between a given star and the planets it is able to spawn is pur
 
 `urbit-utils.hs` is one Haskell binary that can be invoked as `getPlanets`, `getPlanetNums`, or `getShipName`
 
- - getShipName - Get name of "ship" from azimimuth integer.
+ - getShipName - Get name of "ship" from azimuth integer.
    ```shell
    ./getShipName 6                  # galaxy
    ~sut
