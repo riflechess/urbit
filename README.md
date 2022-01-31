@@ -131,5 +131,3 @@ The relationship between a given star and the planets it is able to spawn is pur
 ~moplec 6, ~dacwet-dacwet ~harpyl-harpyl ~pidwyl-pidwyl ~marryc-marryc ~lagrul-lagrul ~nacryd-nacryd
 ~nombex 6, ~dabped-dabped ~dalzod-dalzod ~pitrec-pitrec ~linnes-linnes ~bispet-bispet ~linwes-linwes
 ```
-=======
->>>>>>> d748549c29c824cf9252efbb21c8d7ab992ee592
