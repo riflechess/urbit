@@ -19,7 +19,7 @@ The relationship between a given star and the planets it is able to spawn is pur
 
 `urbit-utils.hs` is one Haskell binary that can be invoked as `getPlanets`, `getPlanetNums`, or `getShipName`
 
- - getShipName - Get name of "ship" from azimimuth integer.
+ - getShipName - Get name of "ship" from azimuth integer.
    ```shell
    ./getShipName 6                  # galaxy
    ~sut
@@ -73,6 +73,7 @@ The relationship between a given star and the planets it is able to spawn is pur
    ```
 
 `urbit_monitor.sh` Is a simple monitor that will validate your urbit ships/planets are running and text you if they are not.
+<<<<<<< HEAD
 
 `showDupes.sh` Is an example of how we can use the above Haskell binaries to further explore the Urbit address space.
  
@@ -130,3 +131,5 @@ The relationship between a given star and the planets it is able to spawn is pur
 ~moplec 6, ~dacwet-dacwet ~harpyl-harpyl ~pidwyl-pidwyl ~marryc-marryc ~lagrul-lagrul ~nacryd-nacryd
 ~nombex 6, ~dabped-dabped ~dalzod-dalzod ~pitrec-pitrec ~linnes-linnes ~bispet-bispet ~linwes-linwes
 ```
+=======
+>>>>>>> d748549c29c824cf9252efbb21c8d7ab992ee592
