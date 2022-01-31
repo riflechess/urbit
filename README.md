@@ -73,3 +73,60 @@ The relationship between a given star and the planets it is able to spawn is pur
    ```
 
 `urbit_monitor.sh` Is a simple monitor that will validate your urbit ships/planets are running and text you if they are not.
+
+`showDupes.sh` Is an example of how we can use the above Haskell binaries to further explore the Urbit address space.
+ 
+ As mentioned, each Urbit star can spawn 65,535 planet.  There are a few things that may effect the rarity of a given planet.  One is azimuth number (`getPlanetNums`), though that is generally layered under a fair amount of abstraction.  The second is the planet ["sigil"](https://urbit.org/blog/creating-sigils).  The third is the planet name. 
+
+ Sigils are derived from planet names, and having a "duplicate" planet name (e.g. ~sitsev-sitsev) creates a cool sigil.
+
+
+|Dupes Count	|% of Total Stars|	Number of Stars|
+| ---- | ---- | ---- |
+|7	|0.0061|	4|
+|6	|0.0473|	31|             
+|5	|0.3051|	200|
+|4	|1.5197|	996|
+|3	|6.1813|	4051|
+|2	|18.347|	12024|
+|1	|36.828|	24136|
+|0	|36.764|	24094|
+
+```
+# stars that can spawn six or seven dupe planets
+~tacfyl 7, ~woltyr-woltyr ~sognum-sognum ~tarlyr-tarlyr ~naprys-naprys ~milmeb-milmeb ~tolbud-tolbud ~lavsyd-lavsyd
+~migtyn 7, ~socteg-socteg ~hilpen-hilpen ~dalpex-dalpex ~libfus-libfus ~banfyn-banfyn ~locmep-locmep ~hacwyd-hacwyd
+~togfyn 7, ~pasdys-pasdys ~davpem-davpem ~binmug-binmug ~sammut-sammut ~pildur-pildur ~fonres-fonres ~binlex-binlex
+~salsel 7, ~labset-labset ~diblys-diblys ~radsyp-radsyp ~havsun-havsun ~lomnum-lomnum ~radnus-radnus ~moprun-moprun
+~halsyd 6, ~wathep-wathep ~larbur-larbur ~tarnut-tarnut ~fodtev-fodtev ~rilteg-rilteg ~mordev-mordev
+~habryp 6, ~tonmet-tonmet ~tinret-tinret ~fadtyv-fadtyv ~dacbyn-dacbyn ~hasmer-hasmer ~marsyt-marsyt
+~ronrud 6, ~todsem-todsem ~bitteg-bitteg ~dibwer-dibwer ~litryg-litryg ~fabrun-fabrun ~barpun-barpun
+~pacsun 6, ~sarsun-sarsun ~forsup-forsup ~namwen-namwen ~tocput-tocput ~dibleb-dibleb ~pasful-pasful
+~tocwyx 6, ~saltep-saltep ~matweg-matweg ~halhul-halhul ~widryd-widryd ~doclud-doclud ~sarfeb-sarfeb
+~nalbec 6, ~rovmyr-rovmyr ~satrel-satrel ~fopsyr-fopsyr ~sicdem-sicdem ~filryx-filryx ~wicmyn-wicmyn
+~sibtux 6, ~ritmev-ritmev ~watlex-watlex ~dotned-dotned ~ribsun-ribsun ~batlud-batlud ~midlyx-midlyx
+~fabdun 6, ~riswed-riswed ~mocseg-mocseg ~sabpex-sabpex ~maptyl-maptyl ~panmer-panmer ~litbyn-litbyn
+~bosnyl 6, ~millen-millen ~pagpes-pagpes ~lonryc-lonryc ~sivmus-sivmus ~pintud-pintud ~havtyr-havtyr
+~ropret 6, ~migtex-migtex ~pacdep-pacdep ~mopfyn-mopfyn ~narben-narben ~dovsym-dovsym ~dibfel-dibfel
+~witheb 6, ~migfex-migfex ~laspun-laspun ~tobwyc-tobwyc ~ridpun-ridpun ~modsec-modsec ~sicnus-sicnus
+~nimrem 6, ~lostyr-lostyr ~libpub-libpub ~tognec-tognec ~nosdyt-nosdyt ~simdyl-simdyl ~dibper-dibper
+~fodnyr 6, ~lospec-lospec ~panwes-panwes ~nilsud-nilsud ~padteb-padteb ~hanpyx-hanpyx ~tapbyn-tapbyn
+~tantuc 6, ~loptug-loptug ~bolmed-bolmed ~lappyl-lappyl ~bantud-bantud ~difdus-difdus ~hadleb-hadleb
+~sorres 6, ~habput-habput ~ridsev-ridsev ~modsun-modsun ~morres-morres ~parret-parret ~tagtec-tagtec
+~mirpex 6, ~fodmet-fodmet ~libhul-libhul ~tiller-tiller ~mactyd-mactyd ~davfun-davfun ~havmev-havmev
+~dacdul 6, ~fippeg-fippeg ~ladmyn-ladmyn ~tarmur-tarmur ~sibwes-sibwes ~fodsut-fodsut ~lopdyl-lopdyl
+~nalsun 6, ~filnup-filnup ~navfer-navfer ~lonber-lonber ~dopseb-dopseb ~folper-folper ~sonreg-sonreg
+~tanryx 6, ~fildur-fildur ~ticner-ticner ~ridtug-ridtug ~satwyx-satwyx ~tacbus-tacbus ~datsym-datsym
+~mocbel 6, ~figlex-figlex ~faltex-faltex ~lapbel-lapbel ~moprec-moprec ~sibrut-sibrut ~ropruc-ropruc
+~bolsyd 6, ~fidrux-fidrux ~tilpes-tilpes ~timdeg-timdeg ~sivrem-sivrem ~sabsul-sabsul ~miclud-miclud
+~foptus 6, ~fasnev-fasnev ~savdeb-savdeb ~halpec-halpec ~lissyl-lissyl ~salduc-salduc ~pasfex-pasfex
+~nortem 6, ~fashex-fashex ~somfen-somfen ~tilrec-tilrec ~sattel-sattel ~hodmeg-hodmeg ~botten-botten
+~barwer 6, ~dovrup-dovrup ~rivryc-rivryc ~larlev-larlev ~torwer-torwer ~molpel-molpel ~fambet-fambet
+~matdun 6, ~dorhul-dorhul ~dotrux-dotrux ~billud-billud ~sipdyr-sipdyr ~sitpeg-sitpeg ~hodmug-hodmug
+~hintud 6, ~diffun-diffun ~witryt-witryt ~nimset-nimset ~minleg-minleg ~sonmut-sonmut ~lapruc-lapruc
+~docnyd 6, ~diblux-diblux ~ragseb-ragseb ~fitsel-fitsel ~lavdef-lavdef ~rigten-rigten ~novheb-novheb
+~firpem 6, ~dapsed-dapsed ~sonnet-sonnet ~ticneb-ticneb ~hadpyl-hadpyl ~fitbex-fitbex ~hodbus-hodbus
+~difpun 6, ~dansun-dansun ~hasryg-hasryg ~bidten-bidten ~lodlyt-lodlyt ~tanfyn-tanfyn ~navler-navler
+~moplec 6, ~dacwet-dacwet ~harpyl-harpyl ~pidwyl-pidwyl ~marryc-marryc ~lagrul-lagrul ~nacryd-nacryd
+~nombex 6, ~dabped-dabped ~dalzod-dalzod ~pitrec-pitrec ~linnes-linnes ~bispet-bispet ~linwes-linwes
+```
