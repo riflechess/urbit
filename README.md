@@ -77,9 +77,9 @@ The relationship between a given star and the planets it is able to spawn is pur
 
 `showDupes.sh` Is an example of how we can use the above Haskell binaries to further explore the Urbit address space.
  
- As mentioned, each Urbit star can spawn 65,535 planet.  There are a few things that may effect the rarity of a given planet.  One is azimuth number (`getPlanetNums`), though that is generally layered under a fair amount of abstraction.  The second is the planet ["sigil"](https://urbit.org/blog/creating-sigils).  The third is the planet name. 
+ As mentioned, each Urbit star can spawn 65,535 planet.  There are a few things that may effect the rarity or uniqueness of a given planet.  One is azimuth number (`getPlanetNums`), though that is generally layered under a fair amount of abstraction.  The second is the planet ["sigil"](https://urbit.org/blog/creating-sigils).  The third is the planet name (also referred to as `@p`. 
 
- Sigils are derived from planet names, and having a "duplicate" planet name (e.g. ~sitsev-sitsev) creates a cool sigil.
+ Sigils are derived from planet names, and having a "duplicate" planet name (e.g. ~sitsev-sitsev) creates a cool sigil.  In addition, just by numbers, there are about the same amount of dupe @p's as there are stars on the network. 
 
 
 |Dupes Count	|% of Total Stars|	Number of Stars|
